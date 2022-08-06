@@ -508,12 +508,12 @@ background-color: var(--color-hover);
   color: var(--color-icon);
   outline: transparent;
   transition: color var(--transition-time) var(--cubic-function),
-border-color var(--transition-time) var(--cubic-function);
+    border-color var(--transition-time) var(--cubic-function);
 }
 
 .clients-icon {
   display: flex;
-  fill: rgba(175, 177, 184, 1)
+  fill: currentColor;
 }
 
 .clients-link:hover,
@@ -559,8 +559,8 @@ border-color: var(--color-accent);
   border-radius: 4px;
   padding: 6px 22px;
   transition: color var(--transition-time) var(--cubic-function),
-  box-shadow var(--transition-time) var(--cubic-function),
-  background-color var(--transition-time) var(--cubic-function);
+    box-shadow var(--transition-time) var(--cubic-function),
+    background-color var(--transition-time) var(--cubic-function);
 }
 
 /* Подсветка первой кнопки */
