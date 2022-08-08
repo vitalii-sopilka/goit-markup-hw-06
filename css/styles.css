@@ -616,14 +616,21 @@ border-color: var(--color-accent);
 /* ----------ПОДВАЛ---------- */
 
 .basement {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
+  background-color: var(--color-basement);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
   background-color: var(--color-basement);
 }
 
 .basement-container {
   display: flex;
   align-items: baseline;
+}
+
+.address-container {
+  margin-right: 70px;
 }
 
 .basement-link {
@@ -642,10 +649,13 @@ border-color: var(--color-accent);
   color: var(--color-white);
 }
 
-.basement-adress-post {
-  margin-bottom: 9px;
+.basement-adress {
   display: block;
   font-style: normal;
+}
+
+.basement-adress-post {
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -653,7 +663,6 @@ border-color: var(--color-accent);
 }
 
 .basement-adress-mt-link {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -670,11 +679,14 @@ border-color: var(--color-accent);
   color: var(--color-accent);
 }
 
-.footer-column + .footer-column {
-  margin-left: 70px;
+/* ПРИСОЕДИНЯЙТЕСЬ */
+
+.socials {
+  margin-right: auto;
 }
 
 .socials-text {
+  display: block;
   color: var(--color-white);
   font-weight: 700;
   font-size: 14px;
@@ -719,6 +731,65 @@ border-color: var(--color-accent);
   height: 20px;
   fill: var(--color-white);
 }
+
+/* ПОДПИШИТЕСЬ НА РАССЫЛКУ */
+
+.subscribe-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.subscribe label {
+  width: 358px;
+  margin-right: 12px;
+}
+
+.subscribe-title {
+  display: block;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.basement .email-field {
+  color: var(--color-white);
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: #2f303a;
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.67;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  background-color: #2196f3;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.send-icon {
+  margin-left: 10px;
+}
+
+
+
+
 
 /* Модальное окно */
 
@@ -789,6 +860,9 @@ border-color: var(--color-accent);
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
   color: var(--color-head);
 }
 
