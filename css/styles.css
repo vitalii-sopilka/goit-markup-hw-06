@@ -989,9 +989,9 @@ border-color: var(--color-accent);
 }
 
 .agreement-link {
-  color: var(--action-color);
+  color: var(--color-accent);
   outline-color: transparent;
-  transition: outline-color var(--primary-transition-time) var(--primary-cubic-function);
+  transition: outline-color var(--transition-time) var(--cubic-function);
 }
 
 .agreement-link:focus {
