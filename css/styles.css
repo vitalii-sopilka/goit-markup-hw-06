@@ -793,6 +793,7 @@ border-color: var(--color-accent);
 
 /* Модальное окно */
 
+/* Фон модального окна */
 .backdrop {
   position: fixed;
   top: 0;
@@ -813,6 +814,7 @@ border-color: var(--color-accent);
   transform: translate(-50%, -50%) scale(0);
 }
 
+/* Собственно модальное окно */
 .modal-window {
   position: fixed;
   left: 50%;
@@ -827,6 +829,7 @@ border-color: var(--color-accent);
   transition: transform var(--transition-time) var(--cubic-function);
 }
 
+/* Кнопка закрытия модального окна */
 .button.close {
   position: absolute;
   right: 8px;
@@ -855,18 +858,18 @@ border-color: var(--color-accent);
   fill: currentColor;
 }
 
+/* Заголовок модального окна */
 .modal-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  align-items: center;
   justify-content: center;
   letter-spacing: 0.03em;
   color: var(--color-head);
 }
 
-/* Форма модального окна */
+/* Форма */
 .modal-form {
   display: flex;
   flex-direction: column;
