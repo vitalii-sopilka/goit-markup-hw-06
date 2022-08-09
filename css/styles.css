@@ -955,6 +955,7 @@ border-color: var(--color-accent);
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  text-decoration: underline;
 }
 
 .check-icon {
