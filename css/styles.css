@@ -62,6 +62,11 @@ img {
   align-items: center;
 }
 
+.head .container {
+  display: flex;
+  align-items: center;
+}
+
 .head-navigation-logo {
   display: block;
   font-family: 'Raleway', sans-serif;
@@ -426,12 +431,11 @@ background-color: var(--color-hover);
 /* ---------ПОСТОЯННЫЕ КЛИЕНТЫ---------- */
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  text-align: center;
+  padding: 94px 0;
 }
 
 .clients-title {
+  text-align: center;
   margin-bottom: 50px;
   font-family: "Roboto";
   font-style: normal;
