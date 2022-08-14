@@ -1,5 +1,5 @@
 :root {
-  --color-head: #212121;
+  --color-header: #212121;
   --color-accent: #2196F3;
   --color-hover: #188CE8;
   --color-black: #000000;
@@ -95,7 +95,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--color-head);
+  color: var(--color-header);
   position: relative;
   transition: color var(--transition-time) var(--cubic-function);
 }
@@ -269,7 +269,7 @@ background-color: var(--color-hover);
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-head);
+  color: var(--color-header);
 }
 
 .benefits-list-item-text {
@@ -296,7 +296,7 @@ background-color: var(--color-hover);
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--color-head);
+  color: var(--color-header);
 }
 
 .doing-list {
@@ -346,7 +346,7 @@ background-color: var(--color-hover);
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--color-head);
+  color: var(--color-header);
 }
 
 .team-list {
@@ -376,7 +376,7 @@ background-color: var(--color-hover);
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--color-head);
+  color: var(--color-header);
 }
 
 .masters-soc-item:first-child {
@@ -439,7 +439,7 @@ background-color: var(--color-hover);
   margin-bottom: 50px;
   font-family: "Roboto";
   font-style: normal;
-  color: var(--color-head);
+  color: var(--color-header);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -488,27 +488,27 @@ border-color: var(--color-accent);
 
 /* ----------Портфолио---------- */
 
-.filter {
+.portfolio {
   padding: 94px 0;
 }
 
-.btns {
+.portfolio__nav {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.btns-item + .btns-item {
+.portfolio__nav-item + .portfolio__nav-item {
   margin-left: 10px;
 }
 
-.btns-item-klick {
+.portfolio__button {
   font-family: Inherit;
   font-weight: 500;
   font-size: 16px;  
   line-height: 1.6;
   letter-spacing: 0.03em;
-  color: var(--color-head);
+  color: var(--color-header);
   background-color: var(--color-team);
   cursor: pointer;
   text-align: center;
@@ -527,8 +527,8 @@ border-color: var(--color-accent);
   background-color: var(--color-accent);
 }
 
-.btns-item-klick:hover,
-.btns-item-klick:focus {
+.portfolio__button:hover,
+.portfolio__button:focus {
   box-shadow: var(--shadows);
   background-color: var(--color-accent);
   color: var(--color-white);
@@ -536,47 +536,47 @@ border-color: var(--color-accent);
 
 /* Карточки в портфолио */
 
-.portfolio-list {
+.projects {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.portfolio-list-item {
+.projects__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
 }
 
-.portfolio-list-item-link {
+.projects__link {
   display: block;
   transition: box-shadow var(--transition-time) var(--cubic-function);
 } 
 
-.portfolio-list-item-link:hover,
-.portfolio-list-item-link:focus {
+.projects__link:hover,
+.projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-list-item-link:hover .description-wrapper,
-.portfolio-list-item-link:focus .description-wrapper {
+.projects__link:hover .projects__description-wrapper,
+.projects__link:focus .projects__description-wrapper {
   transform: translateY(0);
 }
 
-.project-figure {
+.projects__figure {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-list-item-images {
+.projects__item-images {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.description-wrapper {
+.projects__description-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -589,28 +589,28 @@ border-color: var(--color-accent);
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.project-description {
+.projects__description {
   width: 322px;
   font-size: 18px;
   line-height: 1.56;
   color: var(--color-white);
 }
 
-.portfolio-list-item-content {
+.projects__content {
   padding: 20px 24px;
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
 }
 
-.portfolio-list-item-title {
+.projects__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--color-head);
+  color: var(--color-header);
 }
 
-.portfolio-list-item-description {
+.projects__item-description {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -870,7 +870,7 @@ border-color: var(--color-accent);
   text-align: center;
   justify-content: center;
   letter-spacing: 0.03em;
-  color: var(--color-head);
+  color: var(--color-header);
 }
 
 /* Форма */
@@ -899,7 +899,7 @@ border-color: var(--color-accent);
 .modal-input {
   display: inline-block;
   position: relative;
-  color: var(--color-head);
+  color: var(--color-header);
   margin-top: 4px;
 }
 
