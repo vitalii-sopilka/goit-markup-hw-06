@@ -389,7 +389,7 @@ background-color: var(--color-hover);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
-  color: var(--color-gray);   
+  color: var(--color-gray);
 }
 
 .masters-soc-list {
@@ -413,7 +413,7 @@ background-color: var(--color-hover);
 }
 
 .our-team .masters-soc-link{
-  color: #afb1b8;
+  color: var(--color-icon);
   transition: color var(--transition-time) var(--cubic-function),
   background-color var(--transition-time) var(--cubic-function);
 }
